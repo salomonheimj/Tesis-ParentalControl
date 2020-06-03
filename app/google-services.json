@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "457097627288",
+    "firebase_url": "https://parental-control-3afee.firebaseio.com",
+    "project_id": "parental-control-3afee",
+    "storage_bucket": "parental-control-3afee.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:457097627288:android:d49a76d1f8a391e423f2ed",
+        "android_client_info": {
+          "package_name": "com.example.android.fido2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "457097627288-jv6jlanfluorpf1frmajucp48in2fhl9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAO7zTzjX-EfpGThNRmiW_z2bl2OKcXIdU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "457097627288-jv6jlanfluorpf1frmajucp48in2fhl9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
