@@ -18,6 +18,7 @@ package com.example.android.fido2.ui.home
 
 import android.content.Context
 import android.content.Intent
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.DiffUtil
@@ -70,20 +71,23 @@ class CredentialViewHolder(val binding: CredentialItemBinding, onDeleteClicked: 
         binding.publicKey.setOnClickListener {
             binding.credential?.let {
                 val intent = Intent(Intent.ACTION_SEND)
-                val chooser = Intent.createChooser(intent, "title")
+                intent.setType("text/plain")
+                intent.putExtra(Intent.EXTRA_SUBJECT, "Example");
+                intent.putExtra(Intent.EXTRA_TEXT, "Parental Control Example");
+                val chooser = Intent.createChooser(intent, "Parental Control Social App Example")
                 if (intent.resolveActivity(context.packageManager) != null) {
                     context.startActivity(chooser)
-
                 }
             }
         }
-        binding.publicKey.setOnClickListener {
+        /*binding.publicKey.setOnClickListener {
                 val intent = Intent(Intent.ACTION_SEND)
                 val chooser = Intent.createChooser(intent, "title")
                 if (intent.resolveActivity(context.packageManager) != null) {
                     context.startActivity(chooser)
-
             }
+
+            Log.d("Log salo", "Entró")
             binding.id.setOnClickListener {
                     val intent = Intent(Intent.ACTION_SEND)
                     val chooser = Intent.createChooser(intent, "title")
@@ -91,7 +95,7 @@ class CredentialViewHolder(val binding: CredentialItemBinding, onDeleteClicked: 
                         context.startActivity(chooser)
                 }
             }
-        }
+        }*/
 
     }
 }
